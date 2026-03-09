@@ -5,3 +5,4 @@ def somDeGalhos():
 def imagemLago():
     print("imagem de um lago escuro e assustador")
     
+    
