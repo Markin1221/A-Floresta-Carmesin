@@ -2,6 +2,7 @@ import time
 import sys
 from funcoesDecisoes.mainDecisoes import *
 from funcoesApoio.mainApoio import *
+from ascii.ascii import mostrar_ascii
 
 
 def escrever(texto, delay=0.02):
@@ -296,6 +297,7 @@ if escolha == "n":
         escrever("e do nada uma presença te puxa")
         time.sleep(1)
         escrever("voce ve por um flash")
+        mostrar_ascii(r'C:\Users\marki\OneDrive\Documentos\GitHub\A-Floresta-Carmezin\main\ascii', "arteLago.txt")
         time.sleep(1)
         escrever("e apaga")
         time.sleep(3)
@@ -367,6 +369,7 @@ if escolha == "n":
                     escrever("mas ele pode ser um espelho, e o que voce ta vendo la fora... ")
                     time.sleep(1)
                     escrever("esta atras de voce")
+                    mostrar_ascii(r'C:\Users\marki\OneDrive\Documentos\GitHub\A-Floresta-Carmezin\main\ascii', "arte.txt")
                     time.sleep(1)
                     escrever("voce se vira, e ve aquilo, a coisa que te seguiu")
                     time.sleep(1)
