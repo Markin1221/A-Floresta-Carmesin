@@ -67,7 +67,7 @@ escrever("-- o menino olha em volta assustado, mas nao ve ninguem --")
 time.sleep(3)
 
 escrever("A floresta: 'Nao se preocupe, voce nao esta seguro aqui.")
-escrever("siga o caminho, ele te levara a um lugar seguro.'")
+escrever("siga o caminho, ele te levara a um lugar seguro.")
 time.sleep(4)
 
 escrever("Você quer seguir o caminho que a voz mandou?")
@@ -81,10 +81,12 @@ escolha = input(
     "\n voce quer seguir o caminho que a voz mandou (s/n):?  "
 ).lower()
 
+if escolha =="s":
+    caminhoAlt()
 
-if escolha == "n":
+elif escolha == "n":
 
-    escrever("voce segue um caminho, mas parece q a floresta nao ta gostando muito.")
+    escrever("voce segue um caminho, mas parece que a floresta nao ta gostando muito.")
     time.sleep(3)
 
     escrever("o caminho fica mais escuro, e mais silencioso,")
@@ -311,10 +313,26 @@ if escolha == "n":
         time.sleep(3)
         
         escolha = input(
-            "\n voce sente que o caminho é logo apois esse lago, voce quer ele? (s/n):?  "
+            "\n voce sente que o caminho é logo após esse lago, voce quer atravessar o lago? (s/n):?  "
         ).lower()
         
-        if escolha == "s":
+        if escolha == "n":
+            escrever("Você da meia volta e segue seu caminho de volta")
+            time.sleep(1)
+            escrever("mas algo está atrás de você")
+            time.sleep(2)
+            escrever("antes que você percebesse sua barriga começa a doer")
+            time.sleep(3)
+            escrever("um chifre de cervo está atravessando sua barriga")
+            time.sleep(3)
+            escrever("seu corpo perde as forças e cede")
+            time.sleep(3)
+            escrever("e sua ultima visão... o lago estranhamente familiar.")
+            time.sleep(3)
+            escrever("F I M", 0.4)          
+
+
+        elif escolha == "s":
             escrever("voce segue o caminho, e ele te leva pra um lugar mais claro")
             time.sleep(1)
             escrever("esse caminho é mais facil de andar, tem menos arvores, e tem mais luz")
@@ -341,6 +359,13 @@ if escolha == "n":
             
             if escolha == "s":
                 escrever("voce pega o chifre, é dele, ele nao é esse espirito bom que lhe salvou, é algo mais")
+                time.sleep(1)
+                escrever("voce olha e ve seu quarto de infancia, tudo destruido, mas um sentimento de desconforto, incomodo lhe preenche")
+                time.sleep(1)
+                escrever("tem algo no armario, voce sabe que tem")
+
+            elif escolha =="n":
+                escrever("voce ignora o chifre, e vai direto para uma porta estranhamente familiar")
                 time.sleep(1)
                 escrever("voce olha e ve seu quarto de infancia, tudo destruido, mas um sentimento de desconforto, incomodo lhe preenche")
                 time.sleep(1)
@@ -408,19 +433,64 @@ if escolha == "n":
                     escrever("voce algum dia pode ter sido unico, mas aqui... voce so é mais um")
                     time.sleep(1)
                     escrever("F I M", 0.4)
-                elif escolha == "n":
-                    caminho5()  
-                
-                time.sleep(3)
-            elif escolha == "n":
-                caminho4()
-               
-        elif escolha == "n":
-            caminho2()
 
-    elif escolha == "s":
-        caminho2()
-
-
-elif escolha == "s":
-    caminho1()
+                elif escolha =="n":
+                    escrever("você não quer")
+                    time.sleep(3)
+                    escrever("mas seu corpo instintivamente move para abrir a porta do armário") 
+                    time.sleep(2)
+                    escrever("quando voce abre o armario...")
+                    time.sleep(1)
+                    escrever("... nada? nao tem nada, voce olha em volta incredulo e seu olhar cai na janela...")
+                    time.sleep(1)
+                    
+                    escrever("voce olha pra fora e ve algo la, no fundo da floresta...")
+                    time.sleep(1)
+                    escrever("voce encara aquilo, voce nao sente so medo, voce sente desespero...")
+                    time.sleep(1)
+                    escrever("mas algo passa na sua cabeça, aquilo nao esta la fora?...")
+                    time.sleep(1)
+                    escrever("voce lembra algo a mais da sua vida, vidro é muito dual, ele pode ser transparente com voce")
+                    time.sleep(1)
+                    escrever("mas ele pode ser um espelho, e o que voce ta vendo la fora... ")
+                    time.sleep(1)
+                    escrever("esta atras de voce")
+                    mostrar_ascii(r'C:\Users\marki\OneDrive\Documentos\GitHub\A-Floresta-Carmezin\main\ascii', "arte.txt")
+                    time.sleep(1)
+                    escrever("voce se vira, e ve aquilo, a coisa que te seguiu")
+                    time.sleep(1)
+                    escrever("a coisa que te fez sentir medo, a coisa que te fez sentir desespero")
+                    time.sleep(1)
+                    escrever("num ataque de adrenalina e desespero voce corre na direçao da janela e pula")
+                    time.sleep(1)
+                    escrever("voce cai no chao, se machuca, mas consegue fugir quebrando aquela imagem que lhe trazia medo")
+                    time.sleep(1)
+                    escrever("mas ela nao para, ela esta ali com voce, ela continua ali, mais perto, ela sempre esteve ali")
+                    time.sleep(1)
+                    escrever("voce corre pra floresta no intuito de fugir, voce corre como se nao ouvesse amanha")
+                    time.sleep(1)
+                    escrever("mas do nada... essa raiz sempre esteve aqui? voce tropeça e cai")
+                    time.sleep(1)
+                    escrever("olha pra tras e ele esta ali... se aproximando")
+                    time.sleep(1)
+                    escrever("como um instinto voce fica em posiçao fetal...")
+                    time.sleep(1)
+                    escrever("fecha os olhos e sente algo chegando perto de voce, voce nao encherga pq ta de olhos fechados")
+                    time.sleep(1)
+                    escrever("mas voce sabe que é uma mao, quando ta chegando perto voce olha")
+                    time.sleep(1)
+                    escrever("e em fraçao de segundos voce apaga...")
+                    time.sleep(1)
+                    escrever(". . .",0.6)
+                    time.sleep(1)
+                    escrever("voce abre os olhos, mas nao consegue se mexer, voce olha pra baixo...")
+                    time.sleep(1)
+                    escrever("um broto de arvore, ele tem a sua cara de desespero crescendo nele...")
+                    time.sleep(1)
+                    escrever("voce olha pra frente e ve um outro vulto...")
+                    time.sleep(1)
+                    escrever("outra criança correndo desesperada")
+                    time.sleep(1)
+                    escrever("voce algum dia pode ter sido unico, mas aqui... voce so é mais um")
+                    time.sleep(1)
+                    escrever("F I M", 0.4)
